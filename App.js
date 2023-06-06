@@ -75,17 +75,25 @@ function HomeScreen({ navigation }) {
           <TabBar
             {...props}
             indicatorStyle={{
-              backgroundColor: "black",
+              backgroundColor: "#A83C95",
+              marginLeft: 6,
             }}
             // renderIndicator={() => <Text>!</Text>}
             tabStyle={{ width: "auto", padding: 25 }}
-            activeColor="#2E3B4C"
+            activeColor="#A83C95"
             inactiveColor="#91959B"
             renderLabel={({ route, focused, color }) => (
               <Text
                 style={
                   focused
-                    ? { color, margin: 0, fontWeight: "bold", width: 200 }
+                    ? {
+                        color,
+                        padding: 0,
+                        fontSize: 16,
+                        fontWeight: "bold",
+                        width: 200,
+                        height: 100,
+                      }
                     : { color, margin: 0 }
                 }
               >
@@ -94,7 +102,6 @@ function HomeScreen({ navigation }) {
             )}
             scrollEnabled={true}
             style={{ backgroundColor: "white" }}
-            bounces={false}
           />
         )}
         navigationState={{ index, routes }}
