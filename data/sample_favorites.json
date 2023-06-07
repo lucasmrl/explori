@@ -1,0 +1,42 @@
+[
+  {
+    "favorites": [
+      {
+        "id": 1,
+        "name": "Windhaven Meadows Park",
+        "address": "5400 Windhaven Pkwy",
+        "category": "park",
+        "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMizDkls34tTyZBY4H8NhkPB4fS_XPZlJ5OpS9V=s1360-w1360-h1020",
+        "visited": false,
+        "createdAt": "2023/06/05"
+      },
+      {
+        "id": 2,
+        "name": "Hope Park Frisco",
+        "address": "8000 McKinney Rd",
+        "category": "playground",
+        "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN0w6U874yXyzgdzGTrAMM476RMCkORtP4etCMc=s1360-w1360-h1020",
+        "visited": false,
+        "createdAt": "2023/06/05"
+      },
+      {
+        "id": 3,
+        "name": "Oak Hills Splash Park",
+        "address": "1225 Royal Palm Ln",
+        "category": "splash_pad",
+        "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMcIwBeOfzsX6qhq8egk-A-3YvdPQigEzNfaKK6=s1360-w1360-h1020",
+        "visited": false,
+        "createdAt": "2023/06/05"
+      },
+      {
+        "id": 4,
+        "name": "Celebration Park",
+        "address": "701 N Angel Pkwy",
+        "category": "park",
+        "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNIdhdhDw7HR3D9_rrP2im2E3jtIaiIPtBNfZAu=s1360-w1360-h1020",
+        "visited": true,
+        "createdAt": "2023/06/05"
+      }
+    ]
+  }
+]
