@@ -42,8 +42,8 @@ function HomeScreen({ navigation }) {
           tabBarItemStyle: { width: "auto" },
           tabBarStyle: { backgroundColor: "#F2F2F2" },
           tabBarScrollEnabled: true,
-          tabBarInactiveTintColor: "#91959B",
-          tabBarActiveTintColor: "#A53891",
+          // tabBarInactiveTintColor: "#91959B",
+          // tabBarActiveTintColor: "#A53891",
         }}
       >
         <TabTop.Screen name="All" component={Main} />
