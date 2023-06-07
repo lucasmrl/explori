@@ -1,19 +1,12 @@
-import { StyleSheet, Text, View, Pressable } from "react-native";
-import Ionicons from "@expo/vector-icons/Ionicons";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function Header(props) {
   return (
     <View style={styles.container}>
       <View style={styles.container_view_r1}></View>
       <View style={styles.container_view_r2}>
-        <View style={styles.left}>
-          <Text style={styles.header_subtitle}>Explori</Text>
+        <View>
           <Text style={styles.header_title}>{props.title}</Text>
-        </View>
-        <View style={styles.right}>
-          <Pressable onPress={() => alert("Search!")}>
-            <Ionicons name="ios-search-outline" size={24} color="black" />
-          </Pressable>
         </View>
       </View>
     </View>
@@ -31,14 +24,9 @@ const styles = StyleSheet.create({
     height: 44,
     backgroundColor: "",
   },
-  left: {},
-  right: {
-    display: "flex",
-    justifyContent: "center",
-  },
   container_view_r2: {
     paddingLeft: 20,
-    paddingRight: 24,
+    paddingRight: 20,
     height: 54,
     display: "flex",
     justifyContent: "space-between",
@@ -51,6 +39,6 @@ const styles = StyleSheet.create({
   },
   header_title: {
     fontSize: 34,
-    fontWeight: "900",
+    fontWeight: "bold",
   },
 });
