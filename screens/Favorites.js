@@ -57,7 +57,7 @@ export default function Favorites() {
       <View style={styles.container_content}>
         {data.map((el, index) => (
           <CardFavorite
-            key={index}
+            key={el.id}
             thumbnailUrl={el.thumbnail}
             park={convertAndCapitalize(el.name)}
             itemName={convertAndCapitalize(el.category)}
