@@ -38,7 +38,7 @@ function HomeScreen({ navigation }) {
             );
           },
           tabBarLabelStyle: { fontSize: 14 },
-          tabBarIndicatorStyle: { backgroundColor: "#A53891", height: 2 },
+          tabBarIndicatorStyle: { backgroundColor: "#A53891", height: 4 },
           tabBarItemStyle: { width: "auto" },
           tabBarStyle: { backgroundColor: "#F2F2F2" },
           tabBarScrollEnabled: true,
