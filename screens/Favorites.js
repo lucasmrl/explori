@@ -116,15 +116,6 @@ export default function Favorites() {
 
       {/* Container */}
       <View style={styles.container_content}>
-        {/* {data.map((el, index) => (
-          <CardFavorite
-            key={el.id}
-            thumbnailUrl={el.thumbnail}
-            park={convertAndCapitalize(el.name)}
-            itemName={convertAndCapitalize(el.category)}
-            itemAddress={el.address}
-          />
-        ))} */}
         <SwipeableFlatList
           keyExtractor={extractItemKey}
           data={data}

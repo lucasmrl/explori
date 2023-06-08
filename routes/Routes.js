@@ -75,9 +75,10 @@ export default function Routes() {
           name="Home"
           component={HomeScreen}
           options={{
-            tabBarLabel: "Home",
+            tabBarLabel: "Explore",
             tabBarIcon: ({ color, size }) => (
-              <Ionicons name="ios-home-outline" size={24} color={color} />
+              // <Ionicons name="ios-home-outline" size={24} color={color} />
+              <Ionicons name="compass-outline" size={24} color={color} />
             ),
           }}
         />
@@ -85,7 +86,7 @@ export default function Routes() {
           name="Favorites"
           component={Favorites}
           options={{
-            tabBarLabel: "Favorites",
+            tabBarLabel: "Plan",
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="ios-heart-outline" size={24} color={color} />
             ),
