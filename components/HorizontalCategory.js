@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     paddingLeft: 16,
     paddingTop: 16,
     paddingBottom: 0,
+    marginBottom: 16,
   },
   category_title: {
     fontWeight: "600",
