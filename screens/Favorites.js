@@ -131,7 +131,7 @@ export default function Favorites() {
           maxSwipeDistance={150}
           renderQuickActions={({ index, item }) => QuickActions(index, item)}
           contentContainerStyle={styles.contentContainerStyle}
-          shouldBounceOnMount={true}
+          shouldBounceOnMount={false}
         />
       </View>
     </SafeAreaView>
@@ -141,18 +141,18 @@ export default function Favorites() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "rgb(254 240 138)",
+    backgroundColor: "white",
   },
   container_content: {
     flex: 1,
     paddingLeft: 20,
     paddingRight: 20,
     paddingTop: 20,
-    backgroundColor: "white",
+    backgroundColor: "rgb(245 245 244)",
   },
   header_filters: {
     flexDirection: "row",
-    backgroundColor: "rgb(254 240 138)",
+    backgroundColor: "white",
     paddingLeft: 20,
     paddingRight: 20,
     paddingBottom: 16,

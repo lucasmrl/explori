@@ -68,7 +68,7 @@ export default function Routes() {
         initialRouteName="Home"
         screenOptions={{
           headerShown: false,
-          tabBarActiveTintColor: "rgb(190 18 60)",
+          tabBarActiveTintColor: "rgb(234 88 12)",
         }}
       >
         <Tab.Screen
@@ -107,6 +107,6 @@ export default function Routes() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "rgb(217 249 157)",
+    backgroundColor: "white",
   },
 });

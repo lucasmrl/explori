@@ -1,21 +1,23 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 
 const CardFavorite = ({ thumbnailUrl, park, itemName, itemAddress }) => {
   return (
-    <View style={styles.container}>
-      <View style={styles.cardContainer}>
-        <Image source={{ uri: thumbnailUrl }} style={styles.thumbnail} />
-        <View style={styles.textContainer}>
-          <Text style={styles.itemNameText}>{itemName}</Text>
-          <Text style={styles.parkText} numberOfLines={1}>
-            {park}
-          </Text>
-          <Text style={styles.itemAddressText}>{itemAddress}</Text>
+    <Pressable onPress={() => alert(park)}>
+      <View style={styles.container}>
+        <View style={styles.cardContainer}>
+          <Image source={{ uri: thumbnailUrl }} style={styles.thumbnail} />
+          <View style={styles.textContainer}>
+            <Text style={styles.itemNameText}>{itemName}</Text>
+            <Text style={styles.parkText} numberOfLines={1}>
+              {park}
+            </Text>
+            <Text style={styles.itemAddressText}>{itemAddress}</Text>
+          </View>
         </View>
+        <View style={styles.bottomLine} />
       </View>
-      <View style={styles.bottomLine} />
-    </View>
+    </Pressable>
   );
 };
 
@@ -25,7 +27,7 @@ const styles = StyleSheet.create({
   },
   cardContainer: {
     flexDirection: "row",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "rgb(245 245 244)",
     borderRadius: 8,
     marginBottom: 10,
     overflow: "hidden",
