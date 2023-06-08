@@ -56,9 +56,10 @@ const styles = StyleSheet.create({
     color: "#888888",
   },
   bottomLine: {
-    height: 0.5,
+    height: 1,
     width: "90%",
-    backgroundColor: "#DDEAF3",
+    backgroundColor: "rgb(214 211 209)",
+    opacity: 0.5,
     marginBottom: 10,
     display: "flex",
     marginLeft: 10,

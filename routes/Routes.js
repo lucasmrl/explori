@@ -75,7 +75,7 @@ export default function Routes() {
           name="Home"
           component={HomeScreen}
           options={{
-            tabBarLabel: "Explore",
+            tabBarLabel: "Explori",
             tabBarIcon: ({ color, size, focused }) => (
               <Ionicons
                 name={focused ? "ios-compass" : "ios-compass-outline"}
