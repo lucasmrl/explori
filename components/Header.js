@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   container_view_r2: {
     paddingLeft: 20,
     paddingRight: 24,
-    height: 54,
+    height: 74,
     display: "flex",
     justifyContent: "space-between",
     alignContent: "center",

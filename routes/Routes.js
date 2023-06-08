@@ -26,21 +26,21 @@ function HomeScreen({ navigation }) {
         screenOptions={{
           tabBarLabel: ({ focused, children }) => {
             return focused ? (
-              <Text style={{ fontWeight: "bold", color: "#A53891" }}>
+              <Text style={{ fontWeight: "bold", color: "black" }}>
                 {children}
               </Text>
             ) : (
               <Text
-                style={{ fontWeight: "normal", color: "#91959B", fontSize: 15 }}
+                style={{ fontWeight: "normal", color: "#6D6D6D", fontSize: 15 }}
               >
                 {children}
               </Text>
             );
           },
           tabBarLabelStyle: { fontSize: 14 },
-          tabBarIndicatorStyle: { backgroundColor: "#A53891", height: 4 },
+          tabBarIndicatorStyle: { backgroundColor: "black", height: 4 },
           tabBarItemStyle: { width: "auto" },
-          tabBarStyle: { backgroundColor: "#F2F2F2" },
+          tabBarStyle: { backgroundColor: "#E5F5F2" },
           tabBarScrollEnabled: true,
           // tabBarInactiveTintColor: "#91959B",
           // tabBarActiveTintColor: "#A53891",
@@ -68,7 +68,7 @@ export default function Routes() {
         initialRouteName="Home"
         screenOptions={{
           headerShown: false,
-          tabBarActiveTintColor: "#e91e63",
+          tabBarActiveTintColor: "#F8B711",
         }}
       >
         <Tab.Screen
@@ -100,6 +100,6 @@ export default function Routes() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "",
+    backgroundColor: "#B1E4DC",
   },
 });

@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
   container_view_r2: {
     paddingLeft: 20,
     paddingRight: 20,
-    height: 54,
+    paddingTop: 20,
+    height: 74,
     display: "flex",
     justifyContent: "space-between",
     alignContent: "center",
@@ -39,6 +40,6 @@ const styles = StyleSheet.create({
   },
   header_title: {
     fontSize: 34,
-    fontWeight: "bold",
+    fontWeight: "800",
   },
 });

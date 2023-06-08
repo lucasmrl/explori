@@ -141,12 +141,14 @@ export default function Favorites() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: "#B1E4DC",
   },
   container_content: {
     flex: 1,
     paddingLeft: 20,
     paddingRight: 20,
+    paddingTop: 20,
+    backgroundColor: "white",
   },
   header_filters: {
     flexDirection: "row",
@@ -156,17 +158,17 @@ const styles = StyleSheet.create({
   },
   active_filter: {
     fontWeight: "bold",
-    color: "#A53891",
+    color: "black",
     fontSize: 14,
     borderWidth: 1,
-    borderColor: "#A53891",
+    borderColor: "black",
     borderRadius: 4,
     padding: 5,
   },
   inactive_filter: {
     marginLeft: 12,
     fontWeight: "bold",
-    color: "#91959B",
+    color: "#6D6D6D",
     fontSize: 14,
     padding: 6,
   },
