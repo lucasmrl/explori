@@ -37,8 +37,7 @@ export default function HorizontalCategory(props) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#FFE425",
-    borderRadius: 10,
+    backgroundColor: "white",
     paddingLeft: 16,
     paddingTop: 16,
     paddingBottom: 0,
@@ -46,7 +45,7 @@ const styles = StyleSheet.create({
   },
   category_title: {
     fontWeight: "600",
-    color: "black",
+    color: "#219C23",
     fontSize: 16,
     paddingBottom: 4,
   },
