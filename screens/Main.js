@@ -1,9 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 
-export default function Main() {
+export default function Main({ navigation }) {
   return (
     <View style={styles.container}>
       <Text>Main Screen</Text>
+      <Button
+        title="Go to Details"
+        onPress={() => navigation.navigate("Detail")}
+      />
     </View>
   );
 }

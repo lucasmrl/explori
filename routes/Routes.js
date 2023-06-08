@@ -6,10 +6,12 @@ import {
   SafeAreaView,
 } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import Main from "../screens/Main";
+import Detail from "../screens/Detail";
 import Category from "../screens/Category";
 import Favorites from "../screens/Favorites";
 import Header from "../components/Header";
@@ -59,6 +61,44 @@ function HomeScreen({ navigation }) {
   );
 }
 
+const StackHome = createNativeStackNavigator();
+
+function HomeRoutes() {
+  return (
+    <StackFavorite.Navigator>
+      <StackFavorite.Screen
+        options={{ headerShown: false }}
+        name="Hom"
+        component={HomeScreen}
+      />
+      <StackFavorite.Screen
+        name="Detail"
+        component={Detail}
+        options={{ headerShown: true }}
+      />
+    </StackFavorite.Navigator>
+  );
+}
+
+const StackFavorite = createNativeStackNavigator();
+
+function FavoritesRoutes() {
+  return (
+    <StackFavorite.Navigator>
+      <StackFavorite.Screen
+        options={{ headerShown: false }}
+        name="Fav"
+        component={Favorites}
+      />
+      <StackFavorite.Screen
+        name="Detail"
+        component={Detail}
+        options={{ headerShown: true }}
+      />
+    </StackFavorite.Navigator>
+  );
+}
+
 const Tab = createBottomTabNavigator();
 
 export default function Routes() {
@@ -73,13 +113,13 @@ export default function Routes() {
       >
         <Tab.Screen
           name="Home"
-          component={HomeScreen}
+          component={HomeRoutes}
           options={{
             tabBarStyle: {
               // height: 150,
               // paddingHorizontal: 5,
               // paddingTop: 0,
-              backgroundColor: "rgb(245 245 244)",
+              backgroundColor: "white",
               // position: "absolute",
               // borderTopWidth: 0,
             },
@@ -95,13 +135,13 @@ export default function Routes() {
         />
         <Tab.Screen
           name="Favorites"
-          component={Favorites}
+          component={FavoritesRoutes}
           options={{
             tabBarStyle: {
               // height: 150,
               // paddingHorizontal: 5,
               // paddingTop: 0,
-              backgroundColor: "rgb(245 245 244)",
+              backgroundColor: "white",
               // position: "absolute",
               // borderTopWidth: 0,
             },

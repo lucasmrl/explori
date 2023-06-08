@@ -6,7 +6,7 @@ import sample from "../data/sample_favorites.json";
 import { convertAndCapitalize } from "../utils/Utils";
 import SwipeableFlatList from "react-native-swipeable-list";
 
-export default function Favorites() {
+export default function Favorites({ navigation }) {
   const [activeFilter, setActiveFilter] = useState(0);
   const [data, setData] = useState(sample);
   const [refresh, setRefresh] = useState(false);
@@ -126,6 +126,7 @@ export default function Favorites() {
               park={convertAndCapitalize(item.name)}
               itemName={convertAndCapitalize(item.category)}
               itemAddress={item.address}
+              nav={navigation}
             />
           )}
           maxSwipeDistance={150}

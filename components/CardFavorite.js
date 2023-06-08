@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 
-const CardFavorite = ({ thumbnailUrl, park, itemName, itemAddress }) => {
+const CardFavorite = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
   return (
-    <Pressable onPress={() => alert(park)}>
+    <Pressable onPress={() => nav.navigate("Detail")}>
       <View style={styles.container}>
         <View style={styles.cardContainer}>
           <Image source={{ uri: thumbnailUrl }} style={styles.thumbnail} />
