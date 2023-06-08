@@ -141,7 +141,7 @@ export default function Favorites() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "rgb(217 249 157)",
+    backgroundColor: "rgb(254 240 138)",
   },
   container_content: {
     flex: 1,
@@ -152,8 +152,7 @@ const styles = StyleSheet.create({
   },
   header_filters: {
     flexDirection: "row",
-    backgroundColor: "white",
-    paddingTop: 12,
+    backgroundColor: "rgb(254 240 138)",
     paddingLeft: 20,
     paddingRight: 20,
     paddingBottom: 12,
