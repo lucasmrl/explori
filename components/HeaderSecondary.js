@@ -40,6 +40,6 @@ const styles = StyleSheet.create({
   },
   header_title: {
     fontSize: 34,
-    fontWeight: "800",
+    fontWeight: "bold",
   },
 });

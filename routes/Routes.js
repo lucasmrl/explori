@@ -40,7 +40,7 @@ function HomeScreen({ navigation }) {
           tabBarLabelStyle: { fontSize: 14 },
           tabBarIndicatorStyle: { backgroundColor: "black", height: 4 },
           tabBarItemStyle: { width: "auto" },
-          tabBarStyle: { backgroundColor: "#E5F5F2" },
+          tabBarStyle: { backgroundColor: "white" },
           tabBarScrollEnabled: true,
           // tabBarInactiveTintColor: "#91959B",
           // tabBarActiveTintColor: "#A53891",
@@ -68,7 +68,7 @@ export default function Routes() {
         initialRouteName="Home"
         screenOptions={{
           headerShown: false,
-          tabBarActiveTintColor: "#F8B711",
+          tabBarActiveTintColor: "#E0A50A",
         }}
       >
         <Tab.Screen
@@ -76,9 +76,12 @@ export default function Routes() {
           component={HomeScreen}
           options={{
             tabBarLabel: "Explore",
-            tabBarIcon: ({ color, size }) => (
-              // <Ionicons name="ios-home-outline" size={24} color={color} />
-              <Ionicons name="compass-outline" size={24} color={color} />
+            tabBarIcon: ({ color, size, focused }) => (
+              <Ionicons
+                name={focused ? "ios-compass" : "ios-compass-outline"}
+                size={24}
+                color={color}
+              />
             ),
           }}
         />
@@ -87,8 +90,12 @@ export default function Routes() {
           component={Favorites}
           options={{
             tabBarLabel: "Plan",
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons name="ios-heart-outline" size={24} color={color} />
+            tabBarIcon: ({ color, size, focused }) => (
+              <Ionicons
+                name={focused ? "ios-heart" : "ios-heart-outline"}
+                size={24}
+                color={color}
+              />
             ),
           }}
         />
@@ -100,6 +107,6 @@ export default function Routes() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#B1E4DC",
+    backgroundColor: "#FFDA38",
   },
 });
