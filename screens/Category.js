@@ -11,8 +11,7 @@ export default function Category({ route }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: "rgb(245 245 244)",
+    padding: 20,
   },
 });

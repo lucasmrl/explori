@@ -75,6 +75,14 @@ export default function Routes() {
           name="Home"
           component={HomeScreen}
           options={{
+            tabBarStyle: {
+              // height: 150,
+              // paddingHorizontal: 5,
+              // paddingTop: 0,
+              backgroundColor: "rgb(245 245 244)",
+              // position: "absolute",
+              // borderTopWidth: 0,
+            },
             tabBarLabel: "Explori",
             tabBarIcon: ({ color, size, focused }) => (
               <Ionicons
@@ -89,6 +97,14 @@ export default function Routes() {
           name="Favorites"
           component={Favorites}
           options={{
+            tabBarStyle: {
+              // height: 150,
+              // paddingHorizontal: 5,
+              // paddingTop: 0,
+              backgroundColor: "rgb(245 245 244)",
+              // position: "absolute",
+              // borderTopWidth: 0,
+            },
             tabBarLabel: "Plan",
             tabBarIcon: ({ color, size, focused }) => (
               <Ionicons
