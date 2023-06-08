@@ -141,7 +141,7 @@ export default function Favorites() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFDA38",
+    backgroundColor: "rgb(217 249 157)",
   },
   container_content: {
     flex: 1,
