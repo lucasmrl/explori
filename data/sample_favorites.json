@@ -7,7 +7,8 @@
     "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMizDkls34tTyZBY4H8NhkPB4fS_XPZlJ5OpS9V=s1360-w1360-h1020",
     "visited": false,
     "createdAt": "2023/06/05",
-    "visitedOn": ""
+    "visitedOn": "",
+    "visible": true
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN0w6U874yXyzgdzGTrAMM476RMCkORtP4etCMc=s1360-w1360-h1020",
     "visited": false,
     "createdAt": "2023/06/05",
-    "visitedOn": ""
+    "visitedOn": "",
+    "visible": true
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMcIwBeOfzsX6qhq8egk-A-3YvdPQigEzNfaKK6=s1360-w1360-h1020",
     "visited": false,
     "createdAt": "2023/06/05",
-    "visitedOn": ""
+    "visitedOn": "",
+    "visible": true
   },
   {
     "id": 4,
@@ -37,6 +40,7 @@
     "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNIdhdhDw7HR3D9_rrP2im2E3jtIaiIPtBNfZAu=s1360-w1360-h1020",
     "visited": true,
     "createdAt": "2023/06/05",
-    "visitedOn": ""
+    "visitedOn": "",
+    "visible": true
   }
 ]

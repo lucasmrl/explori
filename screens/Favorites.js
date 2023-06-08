@@ -4,20 +4,79 @@ import HeaderSecondary from "../components/HeaderSecondary";
 import CardFavorite from "../components/CardFavorite";
 import sample from "../data/sample_favorites.json";
 import { convertAndCapitalize } from "../utils/Utils";
+import SwipeableFlatList from "react-native-swipeable-list";
 
 export default function Favorites() {
   const [activeFilter, setActiveFilter] = useState(0);
   const [data, setData] = useState(sample);
+  const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
     if (activeFilter == 1) {
-      let visited = sample.filter((el) => el.visited);
+      let visited = sample.filter((el) => el.visited && el.visible);
       setData(visited);
     } else {
-      let pending = sample.filter((el) => el.visited == false);
+      let pending = sample.filter((el) => el.visited == false && el.visible);
       setData(pending);
     }
-  }, [activeFilter]);
+  }, [refresh, activeFilter]);
+
+  const extractItemKey = (item) => {
+    return item.id.toString();
+  };
+
+  const deleteItem = (itemId) => {
+    const newState = [...data];
+    let objectToEdit = newState.find((obj) => obj.id === itemId);
+    objectToEdit.visible = false;
+    setData(newState);
+    setRefresh(!refresh);
+  };
+
+  const markVisited = (itemId) => {
+    const newState = [...data];
+    let objectToEdit = newState.find((obj) => obj.id === itemId);
+    objectToEdit.visited = true;
+    setData(newState);
+    setRefresh(!refresh);
+  };
+
+  const markPending = (itemId) => {
+    const newState = [...data];
+    let objectToEdit = newState.find((obj) => obj.id === itemId);
+    objectToEdit.visited = false;
+    setData(newState);
+    setRefresh(!refresh);
+  };
+
+  const QuickActions = (index, qaItem) => {
+    return (
+      <View style={styles.qaContainer}>
+        {qaItem.visited ? (
+          <View style={[styles.button, styles.button1]}>
+            <Pressable onPress={() => markPending(qaItem.id)}>
+              <Text style={[styles.buttonText, styles.button1Text]}>
+                Pending
+              </Text>
+            </Pressable>
+          </View>
+        ) : (
+          <View style={[styles.button, styles.button2]}>
+            <Pressable onPress={() => markVisited(qaItem.id)}>
+              <Text style={[styles.buttonText, styles.button2Text]}>
+                Visited
+              </Text>
+            </Pressable>
+          </View>
+        )}
+        <View style={[styles.button, styles.button3]}>
+          <Pressable onPress={() => deleteItem(qaItem.id)}>
+            <Text style={[styles.buttonText, styles.button3Text]}>Delete</Text>
+          </Pressable>
+        </View>
+      </View>
+    );
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -54,8 +113,10 @@ export default function Favorites() {
           </Text>
         </Pressable>
       </View>
+
+      {/* Container */}
       <View style={styles.container_content}>
-        {data.map((el, index) => (
+        {/* {data.map((el, index) => (
           <CardFavorite
             key={el.id}
             thumbnailUrl={el.thumbnail}
@@ -63,7 +124,24 @@ export default function Favorites() {
             itemName={convertAndCapitalize(el.category)}
             itemAddress={el.address}
           />
-        ))}
+        ))} */}
+        <SwipeableFlatList
+          keyExtractor={extractItemKey}
+          data={data}
+          renderItem={({ item }) => (
+            <CardFavorite
+              key={item.id}
+              thumbnailUrl={item.thumbnail}
+              park={convertAndCapitalize(item.name)}
+              itemName={convertAndCapitalize(item.category)}
+              itemAddress={item.address}
+            />
+          )}
+          maxSwipeDistance={150}
+          renderQuickActions={({ index, item }) => QuickActions(index, item)}
+          contentContainerStyle={styles.contentContainerStyle}
+          shouldBounceOnMount={true}
+        />
       </View>
     </SafeAreaView>
   );
@@ -100,5 +178,33 @@ const styles = StyleSheet.create({
     color: "#91959B",
     fontSize: 14,
     padding: 6,
+  },
+  qaContainer: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "flex-end",
+  },
+  qaContainer: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "flex-end",
+  },
+  button: {
+    width: 80,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  buttonText: {
+    fontWeight: "500",
+    opacity: 1,
+  },
+  button1Text: {
+    color: "#7772C7",
+  },
+  button2Text: {
+    color: "#007AFF",
+  },
+  button3Text: {
+    color: "#FF3B30",
   },
 });
