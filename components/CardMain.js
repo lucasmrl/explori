@@ -32,18 +32,20 @@ const CardMain = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
 const styles = StyleSheet.create({
   container: { alignItems: "center" },
   cardContainer: {
-    width: 180,
+    display: "flex",
+    width: 220,
+    height: "auto",
     paddingLeft: 0,
     paddingTop: 12,
-    paddingBottom: 12,
+    paddingBottom: 6,
     backgroundColor: "",
     borderRadius: 10,
     overflow: "hidden",
     alignSelf: "flex-start",
   },
   thumbnail: {
-    width: 180,
-    height: 120,
+    width: 220,
+    height: 140,
     borderRadius: 10,
   },
   textContainer: {
