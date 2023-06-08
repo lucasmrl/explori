@@ -3,7 +3,16 @@ import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 
 const CardFavorite = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
   return (
-    <Pressable onPress={() => nav.navigate("Detail")}>
+    <Pressable
+      onPress={() =>
+        nav.navigate("Detail", {
+          thumbnailUrl,
+          park,
+          itemName,
+          itemAddress,
+        })
+      }
+    >
       <View style={styles.container}>
         <View style={styles.cardContainer}>
           <Image source={{ uri: thumbnailUrl }} style={styles.thumbnail} />
