@@ -5,6 +5,7 @@ import {
   Image,
   useWindowDimensions,
 } from "react-native";
+import Animated from "react-native-reanimated";
 
 export default function Detail({ route }) {
   const { height, width } = useWindowDimensions();
@@ -12,12 +13,13 @@ export default function Detail({ route }) {
 
   return (
     <View style={styles.container}>
-      <Image
+      <Animated.Image
         source={{ uri: thumbnailUrl }}
         style={{ width: width, height: height * 0.3 }}
+        sharedTransitionTag="sharedTag"
       />
       <View style={styles.container_content}>
-        <Text>Hi</Text>
+        <Text>Park info</Text>
       </View>
     </View>
   );

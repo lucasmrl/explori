@@ -4,6 +4,8 @@ import {
   Text,
   useWindowDimensions,
   SafeAreaView,
+  View,
+  Pressable,
 } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -63,7 +65,7 @@ function HomeScreen({ navigation }) {
 
 const StackHome = createNativeStackNavigator();
 
-function HomeRoutes() {
+function HomeRoutes({ navigation }) {
   return (
     <StackFavorite.Navigator>
       <StackFavorite.Screen
@@ -74,7 +76,18 @@ function HomeRoutes() {
       <StackFavorite.Screen
         name="Detail"
         component={Detail}
-        options={{ headerShown: true }}
+        options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTitle: "",
+          headerLeft: (props) => (
+            <Pressable onPress={() => navigation.goBack()}>
+              <View style={styles.back_btn}>
+                <Ionicons name="chevron-back" size={24} color="black" />
+              </View>
+            </Pressable>
+          ),
+        }}
       />
     </StackFavorite.Navigator>
   );
@@ -82,7 +95,7 @@ function HomeRoutes() {
 
 const StackFavorite = createNativeStackNavigator();
 
-function FavoritesRoutes() {
+function FavoritesRoutes({ navigation }) {
   return (
     <StackFavorite.Navigator>
       <StackFavorite.Screen
@@ -93,7 +106,18 @@ function FavoritesRoutes() {
       <StackFavorite.Screen
         name="Detail"
         component={Detail}
-        options={{ headerShown: true }}
+        options={{
+          headerShown: true,
+          headerTransparent: true,
+          headerTitle: "",
+          headerLeft: (props) => (
+            <Pressable onPress={() => navigation.navigate("Fav")}>
+              <View style={styles.back_btn}>
+                <Ionicons name="chevron-back" size={24} color="black" />
+              </View>
+            </Pressable>
+          ),
+        }}
       />
     </StackFavorite.Navigator>
   );
@@ -164,5 +188,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",
+  },
+  back_btn: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "white",
+    opacity: 0.9,
+    width: 32,
+    height: 32,
+    borderRadius: 100,
   },
 });

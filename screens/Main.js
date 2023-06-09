@@ -10,7 +10,7 @@ export default function Main({ navigation }) {
         nav={navigation}
         data={data[0].recommended}
       />
-      <HorizontalCategory
+      {/* <HorizontalCategory
         title="Get Wet"
         nav={navigation}
         data={data[0].recommended}
@@ -19,7 +19,7 @@ export default function Main({ navigation }) {
         title="Popular"
         nav={navigation}
         data={data[0].recommended}
-      />
+      /> */}
     </ScrollView>
   );
 }

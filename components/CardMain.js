@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, Image, StyleSheet, Pressable } from "react-native";
+import Animated from "react-native-reanimated";
 
 const CardMain = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
   return (
@@ -15,7 +16,11 @@ const CardMain = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
     >
       <View style={styles.container}>
         <View style={styles.cardContainer}>
-          <Image source={{ uri: thumbnailUrl }} style={styles.thumbnail} />
+          <Animated.Image
+            source={{ uri: thumbnailUrl }}
+            style={styles.thumbnail}
+            sharedTransitionTag="sharedTag"
+          />
           <View style={styles.textContainer}>
             <Text style={styles.categoryText}>{itemName}</Text>
             <Text style={styles.nameText} numberOfLines={1}>
