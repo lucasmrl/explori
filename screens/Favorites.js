@@ -113,8 +113,8 @@ export default function Favorites({ navigation }) {
           </Text>
         </Pressable>
       </View>
-      //TODO: Fix Shared Transition - assing unique tag for image in Favorites
-      and Main
+      {/* TODO: Fix Shared Transition - assing unique tag for image in Favorites
+      and Main */}
       {/* Container */}
       <View style={styles.container_content}>
         <SwipeableFlatList

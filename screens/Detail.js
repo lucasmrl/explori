@@ -16,7 +16,7 @@ export default function Detail({ route }) {
       <Animated.Image
         source={{ uri: thumbnailUrl }}
         style={{ width: width, height: height * 0.3 }}
-        sharedTransitionTag="sharedTag"
+        sharedTransitionTag={thumbnailUrl}
       />
       <View style={styles.container_content}>
         <Text>Park info</Text>

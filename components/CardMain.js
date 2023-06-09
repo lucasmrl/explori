@@ -19,7 +19,7 @@ const CardMain = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
           <Animated.Image
             source={{ uri: thumbnailUrl }}
             style={styles.thumbnail}
-            sharedTransitionTag="sharedTag"
+            sharedTransitionTag={thumbnailUrl}
           />
           <View style={styles.textContainer}>
             <Text style={styles.categoryText}>{itemName}</Text>
@@ -44,14 +44,14 @@ const styles = StyleSheet.create({
     paddingTop: 12,
     paddingBottom: 6,
     backgroundColor: "",
-    borderRadius: 10,
+    borderRadius: 0,
     overflow: "hidden",
     alignSelf: "flex-start",
   },
   thumbnail: {
     width: 220,
     height: 140,
-    borderRadius: 10,
+    borderRadius: 4,
   },
   textContainer: {
     padding: 5,
