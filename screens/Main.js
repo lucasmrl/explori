@@ -5,11 +5,11 @@ import data from "../data/sample.json";
 export default function Main({ navigation }) {
   return (
     <ScrollView style={styles.container}>
-      <HorizontalCategory
+      {/* <HorizontalCategory
         title="Recommended"
         nav={navigation}
         data={data[0].recommended}
-      />
+      /> */}
       {/* <HorizontalCategory
         title="Get Wet"
         nav={navigation}

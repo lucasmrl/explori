@@ -77,17 +77,22 @@ function HomeRoutes({ navigation }) {
         name="Detail"
         component={Detail}
         options={{
-          headerShown: true,
-          headerTransparent: true,
-          headerTitle: "",
-          headerLeft: (props) => (
-            <Pressable onPress={() => navigation.goBack()}>
-              <View style={styles.back_btn}>
-                <Ionicons name="chevron-back" size={24} color="black" />
-              </View>
-            </Pressable>
-          ),
+          presentation: "modal",
+          animation: "fade",
+          headerShown: false,
         }}
+        // options={{
+        //   headerShown: true,
+        //   headerTransparent: true,
+        //   headerTitle: "",
+        //   headerLeft: (props) => (
+        //     <Pressable onPress={() => navigation.goBack()}>
+        //       <View style={styles.back_btn}>
+        //         <Ionicons name="chevron-back" size={24} color="black" />
+        //       </View>
+        //     </Pressable>
+        //   ),
+        // }}
       />
     </StackFavorite.Navigator>
   );
@@ -107,16 +112,9 @@ function FavoritesRoutes({ navigation }) {
         name="Detail"
         component={Detail}
         options={{
-          headerShown: true,
-          headerTransparent: true,
-          headerTitle: "",
-          headerLeft: (props) => (
-            <Pressable onPress={() => navigation.navigate("Fav")}>
-              <View style={styles.back_btn}>
-                <Ionicons name="chevron-back" size={24} color="black" />
-              </View>
-            </Pressable>
-          ),
+          presentation: "modal",
+          animation: "fade",
+          headerShown: false,
         }}
       />
     </StackFavorite.Navigator>
