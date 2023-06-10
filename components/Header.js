@@ -23,6 +23,7 @@ export default function Header(props) {
 const styles = StyleSheet.create({
   container: {
     marginBottom: 16,
+    backgroundColor: "white",
   },
   container_header: {
     display: "flex",

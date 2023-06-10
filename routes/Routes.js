@@ -78,7 +78,7 @@ function HomeRoutes({ navigation }) {
         component={Detail}
         options={{
           presentation: "modal",
-          animation: "fade",
+          animation: "slide_from_bottom",
           headerShown: false,
         }}
         // options={{
@@ -113,7 +113,7 @@ function FavoritesRoutes({ navigation }) {
         component={Detail}
         options={{
           presentation: "modal",
-          animation: "fade",
+          animation: "slide_from_bottom",
           headerShown: false,
         }}
       />
@@ -141,7 +141,7 @@ export default function Routes() {
               // height: 150,
               // paddingHorizontal: 5,
               // paddingTop: 0,
-              backgroundColor: "white",
+              backgroundColor: "rgb(245 245 244)",
               // position: "absolute",
               // borderTopWidth: 0,
             },
@@ -163,7 +163,7 @@ export default function Routes() {
               // height: 150,
               // paddingHorizontal: 5,
               // paddingTop: 0,
-              backgroundColor: "white",
+              backgroundColor: "rgb(245 245 244)",
               // position: "absolute",
               // borderTopWidth: 0,
             },

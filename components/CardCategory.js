@@ -1,8 +1,17 @@
 import React from "react";
-import { View, Text, Image, StyleSheet, Pressable } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  Pressable,
+  useWindowDimensions,
+} from "react-native";
 import Animated from "react-native-reanimated";
 
-const CardMain = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
+const CardCategory = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
+  const { height, width } = useWindowDimensions();
+
   return (
     <Pressable
       onPress={() =>
@@ -15,10 +24,14 @@ const CardMain = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
       }
     >
       <View style={styles.container}>
-        <View style={styles.cardContainer}>
+        <View style={{ ...styles.cardContainer }}>
           <Image
             source={{ uri: thumbnailUrl }}
-            style={styles.thumbnail}
+            style={{
+              width: "100%",
+              height: 180,
+              borderRadius: 4,
+            }}
             // sharedTransitionTag={thumbnailUrl}
           />
           <View style={styles.textContainer}>
@@ -35,7 +48,9 @@ const CardMain = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
 };
 
 const styles = StyleSheet.create({
-  container: { alignItems: "center" },
+  container: {
+    display: "flex",
+  },
   cardContainer: {
     display: "flex",
     height: "auto",
@@ -44,30 +59,25 @@ const styles = StyleSheet.create({
     borderColor: "#2E3B4C",
     borderWidth: 1.5,
     padding: 6,
-    borderRadius: 8,
+    borderRadius: 10,
     overflow: "hidden",
     alignSelf: "flex-start",
-  },
-  thumbnail: {
-    width: 220,
-    height: 140,
-    borderRadius: 4,
   },
   textContainer: {
     padding: 5,
   },
   categoryText: {
-    fontSize: 12,
+    fontSize: 14,
   },
   nameText: {
-    fontSize: 16,
+    fontSize: 20,
     marginBottom: 2,
     fontWeight: "bold",
   },
   addressText: {
-    fontSize: 12,
+    fontSize: 14,
     color: "#888888",
   },
 });
 
-export default CardMain;
+export default CardCategory;

@@ -16,10 +16,10 @@ const CardFavorite = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
     >
       <View style={styles.container}>
         <View style={styles.cardContainer}>
-          <Animated.Image
+          <Image
             source={{ uri: thumbnailUrl }}
             style={styles.thumbnail}
-            sharedTransitionTag={thumbnailUrl}
+            // sharedTransitionTag={thumbnailUrl}
           />
           <View style={styles.textContainer}>
             <Text style={styles.itemNameText}>{itemName}</Text>

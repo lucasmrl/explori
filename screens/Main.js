@@ -5,12 +5,12 @@ import data from "../data/sample.json";
 export default function Main({ navigation }) {
   return (
     <ScrollView style={styles.container}>
-      {/* <HorizontalCategory
+      <HorizontalCategory
         title="Recommended"
         nav={navigation}
         data={data[0].recommended}
-      /> */}
-      {/* <HorizontalCategory
+      />
+      <HorizontalCategory
         title="Get Wet"
         nav={navigation}
         data={data[0].recommended}
@@ -19,7 +19,7 @@ export default function Main({ navigation }) {
         title="Popular"
         nav={navigation}
         data={data[0].recommended}
-      /> */}
+      />
     </ScrollView>
   );
 }
@@ -27,7 +27,8 @@ export default function Main({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "rgb(245 245 244)",
+    backgroundColor: "white",
+    // backgroundColor: "rgb(245 245 244)",
     paddingTop: 20,
   },
 });

@@ -21,6 +21,7 @@ export default function HorizontalCategory(props) {
         ItemSeparatorComponent={() => <View style={{ width: 6 }} />}
         renderItem={({ item }) => (
           <CardMain
+            // key={Math.random()}
             thumbnailUrl={item.thumbnail}
             park={convertAndCapitalize(item.name)}
             itemName={convertAndCapitalize(item.category)}
@@ -45,8 +46,8 @@ const styles = StyleSheet.create({
   },
   category_title: {
     fontWeight: "600",
-    color: "#4E62D2",
+    color: "rgb(234 88 12)",
     fontSize: 16,
-    paddingBottom: 4,
+    paddingBottom: 8,
   },
 });
