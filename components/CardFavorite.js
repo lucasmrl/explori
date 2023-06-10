@@ -41,7 +41,8 @@ const styles = StyleSheet.create({
   },
   cardContainer: {
     flexDirection: "row",
-    backgroundColor: "rgb(245 245 244)",
+    // backgroundColor: "rgb(245 245 244)",
+    backgroundColor: "white",
     borderRadius: 8,
     marginBottom: 10,
     overflow: "hidden",

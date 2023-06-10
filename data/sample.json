@@ -73,6 +73,225 @@
         "addedBy": "Julia B.",
         "last_edit": "2023-06-05T00:00:00Z",
         "createdAt": "06/05/2023"
+      },
+      {
+        "id": 2,
+        "name": "Hope Park Frisco",
+        "address": {
+          "full": "5400 Windhaven Pkwy, Plano, TX 75093",
+          "street": "8000 McKinney Rd",
+          "city": "Plano",
+          "state": "Texas",
+          "state_abbreviated": "TX",
+          "zip": "75093",
+          "lat": "33.055760",
+          "long": "-96.810190"
+        },
+        "contacts": {
+          "website": "https://www.plano.gov/1514/Windhaven-Meadows-Park",
+          "phone": "(972) 210-2936"
+        },
+        "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipN0w6U874yXyzgdzGTrAMM476RMCkORtP4etCMc=s1360-w1360-h1020",
+        "images": [
+          {
+            "url": "https://lh3.googleusercontent.com/p/AF1QipMizDkls34tTyZBY4H8NhkPB4fS_XPZlJ5OpS9V=s1360-w1360-h1020",
+            "name": "image1",
+            "id": 1,
+            "visible": "true"
+          },
+          {
+            "url": "https://planomagazine.com/wp-content/uploads/2019/09/Liberty-Playground-pic-Daly-Rea-Plano-Magazine-Feature.jpg",
+            "name": "image2",
+            "id": 2,
+            "visible": "true"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/p/AF1QipMaqwmGfKoTdo3CdaXDOFf_9-FOWU_44-6O7Bmq=s1360-w1360-h1020",
+            "name": "image3",
+            "id": 3,
+            "visible": "true"
+          }
+        ],
+        "comments": [
+          {
+            "user": "Julia B.",
+            "comment": "I loved everything about this park",
+            "createdAt": "2023-06-05T10:30:00Z",
+            "visible": true,
+            "flaged": false
+          }
+        ],
+        "likes": 120,
+        "description": "",
+        "highlights": ["Nature", "Pavilions", "Picnic Tables"],
+        "amenities": [
+          "Parking",
+          "Restrooms",
+          "Dog Park",
+          "Trails",
+          "Pavilions",
+          "Picnic Tables"
+        ],
+        "category": "park",
+        "in_this_location": [
+          {
+            "name": "Liberty Playground",
+            "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPsJ4XmAZIXzIbKhygPjM8VsoFiKHBQUGaG0Ayn=s1360-w1360-h1020",
+            "id": 1234,
+            "categories": ["playground", "splash pad"]
+          }
+        ],
+        "visible": true,
+        "flaged": false,
+        "addedBy": "Julia B.",
+        "last_edit": "2023-06-05T00:00:00Z",
+        "createdAt": "06/05/2023"
+      },
+      {
+        "id": 3,
+        "name": "Oak Hills Splash Park",
+        "address": {
+          "full": "5400 Windhaven Pkwy, Plano, TX 75093",
+          "street": "1225 Royal Palm Ln",
+          "city": "Plano",
+          "state": "Texas",
+          "state_abbreviated": "TX",
+          "zip": "75093",
+          "lat": "33.055760",
+          "long": "-96.810190"
+        },
+        "contacts": {
+          "website": "https://www.plano.gov/1514/Windhaven-Meadows-Park",
+          "phone": "(972) 210-2936"
+        },
+        "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipMcIwBeOfzsX6qhq8egk-A-3YvdPQigEzNfaKK6=s1360-w1360-h1020",
+        "images": [
+          {
+            "url": "https://lh3.googleusercontent.com/p/AF1QipMizDkls34tTyZBY4H8NhkPB4fS_XPZlJ5OpS9V=s1360-w1360-h1020",
+            "name": "image1",
+            "id": 1,
+            "visible": "true"
+          },
+          {
+            "url": "https://planomagazine.com/wp-content/uploads/2019/09/Liberty-Playground-pic-Daly-Rea-Plano-Magazine-Feature.jpg",
+            "name": "image2",
+            "id": 2,
+            "visible": "true"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/p/AF1QipMaqwmGfKoTdo3CdaXDOFf_9-FOWU_44-6O7Bmq=s1360-w1360-h1020",
+            "name": "image3",
+            "id": 3,
+            "visible": "true"
+          }
+        ],
+        "comments": [
+          {
+            "user": "Julia B.",
+            "comment": "I loved everything about this park",
+            "createdAt": "2023-06-05T10:30:00Z",
+            "visible": true,
+            "flaged": false
+          }
+        ],
+        "likes": 120,
+        "description": "",
+        "highlights": ["Nature", "Pavilions", "Picnic Tables"],
+        "amenities": [
+          "Parking",
+          "Restrooms",
+          "Dog Park",
+          "Trails",
+          "Pavilions",
+          "Picnic Tables"
+        ],
+        "category": "playground",
+        "in_this_location": [
+          {
+            "name": "Liberty Playground",
+            "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPsJ4XmAZIXzIbKhygPjM8VsoFiKHBQUGaG0Ayn=s1360-w1360-h1020",
+            "id": 1234,
+            "categories": ["playground", "splash pad"]
+          }
+        ],
+        "visible": true,
+        "flaged": false,
+        "addedBy": "Julia B.",
+        "last_edit": "2023-06-05T00:00:00Z",
+        "createdAt": "06/05/2023"
+      },
+      {
+        "id": 4,
+        "name": "Celebration Park",
+        "address": {
+          "full": "5400 Windhaven Pkwy, Plano, TX 75093",
+          "street": "701 N Angel Pkwy",
+          "city": "Plano",
+          "state": "Texas",
+          "state_abbreviated": "TX",
+          "zip": "75093",
+          "lat": "33.055760",
+          "long": "-96.810190"
+        },
+        "contacts": {
+          "website": "https://www.plano.gov/1514/Windhaven-Meadows-Park",
+          "phone": "(972) 210-2936"
+        },
+        "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipNIdhdhDw7HR3D9_rrP2im2E3jtIaiIPtBNfZAu=s1360-w1360-h1020",
+        "images": [
+          {
+            "url": "https://lh3.googleusercontent.com/p/AF1QipMizDkls34tTyZBY4H8NhkPB4fS_XPZlJ5OpS9V=s1360-w1360-h1020",
+            "name": "image1",
+            "id": 1,
+            "visible": "true"
+          },
+          {
+            "url": "https://planomagazine.com/wp-content/uploads/2019/09/Liberty-Playground-pic-Daly-Rea-Plano-Magazine-Feature.jpg",
+            "name": "image2",
+            "id": 2,
+            "visible": "true"
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/p/AF1QipMaqwmGfKoTdo3CdaXDOFf_9-FOWU_44-6O7Bmq=s1360-w1360-h1020",
+            "name": "image3",
+            "id": 3,
+            "visible": "true"
+          }
+        ],
+        "comments": [
+          {
+            "user": "Julia B.",
+            "comment": "I loved everything about this park",
+            "createdAt": "2023-06-05T10:30:00Z",
+            "visible": true,
+            "flaged": false
+          }
+        ],
+        "likes": 120,
+        "description": "",
+        "highlights": ["Nature", "Pavilions", "Picnic Tables"],
+        "amenities": [
+          "Parking",
+          "Restrooms",
+          "Dog Park",
+          "Trails",
+          "Pavilions",
+          "Picnic Tables"
+        ],
+        "category": "splash_pad",
+        "in_this_location": [
+          {
+            "name": "Liberty Playground",
+            "thumbnail": "https://lh3.googleusercontent.com/p/AF1QipPsJ4XmAZIXzIbKhygPjM8VsoFiKHBQUGaG0Ayn=s1360-w1360-h1020",
+            "id": 1234,
+            "categories": ["playground", "splash pad"]
+          }
+        ],
+        "visible": true,
+        "flaged": false,
+        "addedBy": "Julia B.",
+        "last_edit": "2023-06-05T00:00:00Z",
+        "createdAt": "06/05/2023"
       }
     ]
   }

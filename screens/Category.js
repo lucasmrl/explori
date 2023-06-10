@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, ScrollView } from "react-native";
 import CardCategory from "../components/CardCategory";
 
 export default function Category({ route, navigation }) {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <CardCategory
         thumbnailUrl={
           "https://lh3.googleusercontent.com/p/AF1QipMcIwBeOfzsX6qhq8egk-A-3YvdPQigEzNfaKK6=s1360-w1360-h1020"
@@ -13,7 +13,7 @@ export default function Category({ route, navigation }) {
         itemAddress={"1225 Royal Palm Ln"}
         nav={navigation}
       />
-    </View>
+    </ScrollView>
   );
 }
 
@@ -21,6 +21,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: "rgb(245 245 244)",
+    paddingTop: 40,
+    // backgroundColor: "rgb(245 245 244)",
+    backgroundColor: "white",
   },
 });

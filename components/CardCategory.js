@@ -30,7 +30,7 @@ const CardCategory = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
             style={{
               width: "100%",
               height: 180,
-              borderRadius: 4,
+              borderRadius: 5,
             }}
             // sharedTransitionTag={thumbnailUrl}
           />
@@ -43,6 +43,7 @@ const CardCategory = ({ thumbnailUrl, park, itemName, itemAddress, nav }) => {
           </View>
         </View>
       </View>
+      <View style={styles.bottomLine} />
     </Pressable>
   );
 };
@@ -55,9 +56,9 @@ const styles = StyleSheet.create({
     display: "flex",
     height: "auto",
     width: "100%",
-    backgroundColor: "white",
-    borderColor: "#2E3B4C",
-    borderWidth: 1.5,
+    // backgroundColor: "white",
+    // borderColor: "#2E3B4C",
+    // borderWidth: 1.5,
     padding: 6,
     borderRadius: 10,
     overflow: "hidden",
@@ -77,6 +78,15 @@ const styles = StyleSheet.create({
   addressText: {
     fontSize: 14,
     color: "#888888",
+  },
+  bottomLine: {
+    height: 1,
+    width: "100%",
+    backgroundColor: "rgb(214 211 209)",
+    opacity: 0.5,
+    marginTop: 10,
+    marginBottom: 10,
+    display: "flex",
   },
 });
 

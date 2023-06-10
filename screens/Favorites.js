@@ -150,7 +150,8 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
     paddingTop: 20,
-    backgroundColor: "rgb(245 245 244)",
+    // backgroundColor: "rgb(245 245 244)",
+    backgroundColor: "white",
   },
   header_filters: {
     flexDirection: "row",
