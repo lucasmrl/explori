@@ -13,7 +13,7 @@ export default function Main({ navigation }) {
       <HorizontalCategory
         title="Get Wet"
         nav={navigation}
-        data={data[0].recommended}
+        data={data[0].recommended.filter((el) => el.id > 2)}
       />
       <HorizontalCategory
         title="Popular"

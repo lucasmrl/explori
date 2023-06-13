@@ -56,7 +56,7 @@ export default function Detail({ route, navigation }) {
         </View>
         <Text style={styles.short_description}>
           This park features many amenities and is located in the heart of the
-          city Greate for families and dogs.
+          city. Greate for families and pets.
         </Text>
         <Text style={styles.category_title}>HIGHLIGHTS</Text>
         <View style={styles.section_highlight}>
@@ -76,7 +76,7 @@ export default function Detail({ route, navigation }) {
             "https://lh3.googleusercontent.com/p/AF1QipMcIwBeOfzsX6qhq8egk-A-3YvdPQigEzNfaKK6=s1360-w1360-h1020"
           }
           park={"Oak Hills Splash Park"}
-          itemName={"park"}
+          itemName={"Park"}
           itemAddress={"1225 Royal Palm Ln"}
           nav={null}
         />
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     width: 90,
     height: 90,
     borderRadius: 100,
-    backgroundColor: "#FAFAE1",
+    backgroundColor: "#FCF3CF",
   },
   footer: {
     display: "flex",

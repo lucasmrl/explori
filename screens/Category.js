@@ -13,6 +13,15 @@ export default function Category({ route, navigation }) {
         itemAddress={"1225 Royal Palm Ln"}
         nav={navigation}
       />
+      <CardCategory
+        thumbnailUrl={
+          "https://lh3.googleusercontent.com/p/AF1QipPsJ4XmAZIXzIbKhygPjM8VsoFiKHBQUGaG0Ayn=s1360-w1360-h1020"
+        }
+        park={"Liberty Plauyground"}
+        itemName={"Playground"}
+        itemAddress={"98 Drive Way"}
+        nav={navigation}
+      />
     </ScrollView>
   );
 }
